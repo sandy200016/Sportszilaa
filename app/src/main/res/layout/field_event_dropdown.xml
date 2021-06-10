@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="335dp"
+    android:layout_gravity="center"
+    android:background="@color/popUp"
+    android:paddingBottom="0dp">
+
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#111111">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Events"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/house_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/shotput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="ShotPut"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/javelin_throw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="JavelinThrow"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/discuss_throw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="DiscusThrow"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/long_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="LongJump"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/high_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="HighJump"
+            android:textColor="@color/textColor" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/field_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:background="@color/popUp"
+        android:text="ok"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="285dp"
+        android:background="#111111" />
+</RelativeLayout>

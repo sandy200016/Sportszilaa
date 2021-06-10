@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sportszilla">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sportszilla">
+        <activity android:name=".feedback"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Contact"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".khokho"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".field_events"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".track_events"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".football"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".cricket"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".kabaddi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".table_tennis"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".carrom"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".vollyball"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".chess"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="232dp"
+    android:layout_gravity="center"
+    android:background="@color/popUp"
+    android:paddingBottom="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#111111"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="INSTRUCTIONS"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear_instruction"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/instruction_no_of_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="1. No of player's: 1"
+            />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/instruction_game_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="2. Date: 1/7/2021"
+            />
+        <TextView
+            android:layout_marginTop="4dp"
+        android:id="@+id/instruction_game_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:text="3. Price: ₹50"
+        />
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/instruction_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="@color/popUp"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:text="Yes, I understood"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_marginTop="190dp"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111"
+        />
+
+</RelativeLayout>

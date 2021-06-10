@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table_tennis_team">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:padding="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Qoute container-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/quote_container"
+                android:elevation="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="35dp"
+                android:paddingRight="6dp">
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_italic"
+                    android:text="'Learn from your defeat and you'll \n be a winner'"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quote"
+                    android:layout_marginLeft="128dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-Azlan"
+                    android:textColor="@color/textColor" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/tabletennis_i" />
+
+            </RelativeLayout>
+
+
+            <!--Player Details-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="PLAYER'S DETAILS"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Player 1"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/table_tennis_first_player_name"
+                android:layout_width="match_parent"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/user_icon"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="9dp"
+                android:hint="Enter your name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/table_tennis_first_player_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:drawableStart="@drawable/edittext_phone"
+                android:drawableLeft="@drawable/edittext_phone"
+                android:drawablePadding="9dp"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/backgroundColor">
+
+                <TextView
+                    android:id="@+id/table_tennis_class_1"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dropdown_1"
+                    android:hint="Select class"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:onClick="select_class_table_tennis_player1"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="12dp"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Player 2"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/table_tennis_second_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/user_icon"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="9dp"
+                android:hint="Enter your name"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/table_tennis_second_player_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/edittext_phone"
+                android:drawableLeft="@drawable/edittext_phone"
+                android:drawablePadding="9dp"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/backgroundColor">
+
+                <TextView
+                    android:id="@+id/table_tennis_class_2"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dropdown_1"
+                    android:hint="Select class"
+                    android:onClick="select_class_table_tennis_player2"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick" />
+
+             <!--   <TextView
+                    android:id="@+id/table_tennis_house_2"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/dropdown_1"
+                    android:drawablePadding="8dp"
+                    android:hint="Select house"
+                    android:onClick="select_house_table_tennis_player2"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:paddingRight="9dp"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick" />-->
+            </RelativeLayout>
+
+
+         <!--   <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="CATEGORY"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/table_tennis_category_team"
+                android:layout_width="165dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/dropdown_1"
+                android:drawablePadding="8dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:onClick="category_table_tennis_team"
+                android:hint="Select category"
+                android:paddingLeft="11dp"
+                android:paddingTop="12dp"
+                android:paddingRight="9dp"
+                android:textSize="16sp"
+                tools:ignore="OnClick" />-->
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/backgroundColor">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CATEGORY"
+                    android:textColor="@color/textColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.26" />
+
+                <TextView
+                    android:id="@+id/table_tennis_category_team"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:background="@drawable/dropdown_1"
+                    android:drawablePadding="8dp"
+                    android:hint="Select category"
+                    android:onClick="category_table_tennis_team"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="9dp"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOUSE"
+                    android:textColor="@color/textColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/table_tennis_house_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.26999998" />
+
+                <TextView
+                    android:id="@+id/table_tennis_house_1"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dropdown_1"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:hint="Select house"
+                    android:onClick="select_house_table_tennis_player1"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="9dp"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="OnClick" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--Payment Button-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="PAYMENT"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/backgroundColor">
+
+                <androidx.appcompat.widget.AppCompatButton
+                   android:onClick="offlinePayment_table_tennis_team"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/offline_payment_button"
+                    android:text="Offline"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    tools:ignore="OnClick" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onlinepayment_table_tennis_team"
+                    android:background="@drawable/online_payment_button"
+                    android:text="Online"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="OnClick" />
+                />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

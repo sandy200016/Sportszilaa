@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/contact_background">
+    <RelativeLayout
+        android:id="@+id/contact_heading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/contact_icon"/>
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="Chess"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/textColor"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactPerson"
+            android:textSize="16dp"
+            android:text="Santosh"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@+id/contactName"
+            android:textColor="@color/textColor"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/expandableMenu"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/contact_heading"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edittext_phone"/>
+
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9967782459"
+            android:textSize="19dp"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor"
+            />
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/whatsapp_icon"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

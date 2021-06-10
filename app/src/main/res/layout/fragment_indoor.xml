@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Indoor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/chess"
+
+                android:onClick="chess"
+                android:elevation="5dp"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:onClick="carrom"
+                android:layout_height="160dp"
+                android:elevation="5dp"
+                android:src="@drawable/carrom"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:onClick="vollyball"
+                android:elevation="5dp"
+                android:src="@drawable/vollyball"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:elevation="5dp"
+                android:onClick="table_tennis"
+                android:src="@drawable/tabletennis"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:onClick="kabaddi"
+                android:elevation="5dp"
+                android:src="@drawable/kabbadi"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

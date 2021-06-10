@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Outdoor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:background="@color/backgroundColor"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:elevation="5dp"
+                android:onClick="cricket"
+                android:src="@drawable/cricket"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:elevation="5dp"
+                android:onClick="football"
+                android:src="@drawable/football"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:onClick="track_event"
+                android:src="@drawable/trackevents"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:elevation="5dp"
+                android:onClick="field_events"
+                android:src="@drawable/fieldevents"
+                tools:ignore="OnClick" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:onClick="kho_kho"
+                android:elevation="5dp"
+                android:src="@drawable/khokho"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

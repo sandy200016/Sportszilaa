@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="173dp"
+    android:height="50dp"
+    android:viewportWidth="173"
+    android:viewportHeight="50">
+  <path
+      android:pathData="M4.644,0H168.356C170.921,0 173,1.791 173,4V46c0,2.209 -2.079,4 -4.644,4H4.644C2.079,50 0,48.209 0,46V4C0,1.791 2.079,0 4.644,0Z"
+      android:fillColor="@color/editbox_bg"/>
+  <path
+      android:pathData="M148.112,31 L139.785,21.484 142.265,18.65l5.846,6.681L153.958,18.65l2.48,2.834Z"
+      android:fillColor="#bcbcbc"/>
+</vector>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="232dp"
+    android:layout_gravity="center"
+    android:background="@color/popUp"
+    android:paddingBottom="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#111111"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Select class"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/gender_linear"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/class_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/Fy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:textColor="@color/textColor"
+                android:checked="true"
+                android:text="Fy" />
+            <RadioButton
+                android:id="@+id/Sy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:textColor="@color/textColor"
+                android:text="Sy" />
+
+            <RadioButton
+                android:id="@+id/Ty"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:text="Ty" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/class_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="@color/popUp"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:text="ok"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_marginTop="190dp"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111"
+        />
+</RelativeLayout>

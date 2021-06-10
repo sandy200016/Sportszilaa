@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sportszilla</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edittext_hint"><font size="16">Select Events</font></string>
+</resources>

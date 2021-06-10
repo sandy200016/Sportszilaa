@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@color/popUp"
+    android:paddingBottom="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#111111"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Select house"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/house_linear"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/house_category"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/akash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:textColor="@color/textColor"
+                android:checked="true"
+                android:text="Akash" />
+            <RadioButton
+                android:id="@+id/agni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:textColor="@color/textColor"
+                android:text="Agni" />
+
+            <RadioButton
+                android:id="@+id/prithvi"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:text="Prithvi" />
+            <RadioButton
+                android:id="@+id/surya"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                android:text="Surya" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/house_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="@color/popUp"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:text="ok"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111"
+        />
+</RelativeLayout>

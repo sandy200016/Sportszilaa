@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="335dp"
+    android:layout_gravity="center"
+    android:background="@color/popUp"
+    android:paddingBottom="0dp">
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#111111">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Events"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/house_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/race_100m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="100m race"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/race_200m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="200m race"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/race_400m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="400m race"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/race_800m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="800m race"
+            android:textColor="@color/textColor" />
+
+        <CheckBox
+            android:id="@+id/marathon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:text="Marathon"
+            android:textColor="@color/textColor" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/field_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:background="@color/popUp"
+        android:text="ok"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="285dp"
+        android:background="#111111" />
+
+</RelativeLayout>
